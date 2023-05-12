@@ -68,11 +68,11 @@
   text-transform: capitalize;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:is(:hover, .active) {
   color: var(--accent);
 }
 
-.nav-menu li:hover {
+.nav-menu li:is(:hover, .active) {
   color: var(--accent);
 }
 

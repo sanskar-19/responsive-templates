@@ -30,7 +30,7 @@
     cursor: pointer;
   }
 
-  .nav-menu li:hover {
+  .nav-menu li:is(:hover, .active) {
     color: var(--button-text);
     background-color: var(--accent);
   }
