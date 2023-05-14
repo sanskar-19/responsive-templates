@@ -13,6 +13,7 @@
   /* colors */
   --primary: #fff;
   --accent: #7f4dfd;
+  --shadow-accent: #7f4dfd24;
   --text: #100f10;
   --button-text: #fff;
   --hover-color: #6c34fe;
@@ -27,13 +28,29 @@
   --font-size-heading: 2.5rem;
   --font-size-subheading: 1.25rem;
 }
+/* html {
+  font-size: calc(60% + 0.6vmax);
+} */
 
-@media screen and (width > 1280px) {
+/* @media screen and (width > 1280px) {
+  html 
+} */
+@media screen and (2560px <= width) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (1920px <= width < 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (1280px <= width < 1920px) {
   html {
     font-size: 18px;
   }
 }
-@media screen and (width <= 1280px) {
+@media screen and (1024px <= width <= 1280px) {
   html {
     font-size: 16px;
   }

@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/components/carousel.css" />
+    <link rel="stylesheet" href="styles/utility/animations.css" />
+    <link rel="stylesheet" href="styles/utility/config.css" />
+    <link rel="stylesheet" href="styles/utility/utility.css" />
     <link rel="stylesheet" href="styles/media.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
-    <link rel="stylesheet" href="styles/config.css" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/index.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/carousel.js" defer></script>
   </head>
   <body>
     <main class="main-wrapper">
@@ -58,6 +63,135 @@
           <div class="image-block-wrapper">
             <img src="assets/people-working-together-online.png" />
           </div>
+        </div>
+      </section>
+
+      <!-- what we offer -->
+      <section class="section-wrapper offerings">
+        <div class="content-box">
+          <div class="content-wrapper">
+            <h2>What we <span style="color: var(--accent)">OFFER?</span></h2>
+
+            <!-- carousel -->
+            <section class="slider-wrapper">
+              <section id="offerings" class="slider">
+                <section class="slider-track">
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/line-chart-with-arrows.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/pie-chart.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/politician-giving-a-speech-behind-a-presentation-stand.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/house-cleaning-robot.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/bank-card-back-side.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/line-chart-with-arrows.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/pie-chart.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/politician-giving-a-speech-behind-a-presentation-stand.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/house-cleaning-robot.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  <article class="slide-item">
+                    <div class="slide-content-box">
+                      <div class="image-block-wrapper">
+                        <img src="assets/offerings/bank-card-back-side.png"/>
+                      </div>
+                      <div class="title">Title</div>
+                      <div class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ab ipsa cum eius. </div>
+                    </div>
+                  </article>
+                  
+                 
+                  <!-- <article class="slide-item">
+                  
+                </article>
+                <article class="slide-item">
+                  
+                </article>
+                <article class="slide-item">
+                  
+                </article>
+                <article class="slide-item">
+                  
+                </article>
+                <article class="slide-item">
+                  
+                </article> -->
+                </section>
+              </section>
+              <!-- <section class="carousel-controls">
+                <button id="prev" class="slider-navigation-button"><</button>
+                <button id="next" class="slider-navigation-button">></button>
+              </section> -->
+            </div>
+          </div>
+          <button class="button-primary">Get in Touch</button>
         </div>
       </section>
 

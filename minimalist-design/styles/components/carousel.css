@@ -1,0 +1,119 @@
+.slider {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  background-color: var(--footer-grey);
+}
+
+.slider-wrapper {
+}
+
+.slider-track {
+  position: relative;
+  display: flex;
+  width: max-content;
+  /* width: calc(400px * 5); */
+  column-gap: 2rem;
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
+  /* animation: slide 10s linear infinite; */
+}
+
+.slide-item {
+  height: max-content;
+  flex: 0 0 auto;
+  width: w-max;
+  height: h-max;
+  border-radius: 0.625rem;
+  overflow: visible;
+  transform-style: preserve-3d;
+}
+
+#offerings .slide-item .slide-content-box {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  width: 15rem;
+  background-color: var(--primary);
+  height: 20rem;
+}
+
+.slider-navigation-button {
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.05);
+  width: 2.5rem;
+  cursor: pointer;
+  height: 2.5rem;
+  border: 1px solid #e3e3e3;
+  background-color: #e3e3e3;
+}
+
+.slider-navigation-button:hover {
+  background-color: #b6b6b6;
+}
+
+.carousel-controls {
+  width: max-content;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+}
+
+.slide-content-box {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.section-wrapper .content-box .slider .image-block-wrapper {
+  width: 100%;
+  height: 50%;
+}
+
+#offerings .slider-track {
+  animation: infinite-rotate 10s linear infinite;
+}
+
+#offerings .slider-track:hover {
+  animation-play-state: paused;
+}
+
+#offerings .slider-track:hover .slide-item:hover .slide-content-box {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  /* transform: scale(1.08); */
+}
+
+#offerings .slider-track:hover .slide-item:not(:hover) .slide-content-box {
+  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.05);
+  background-blend-mode: overlay;
+}
+/* 
+.section-wrapper .content-box .content-wrapper h2.offerings-slide-item-heading {
+  text-orientation: upright;
+  flex-grow: 1;
+  font-size: var(--font-size-subheading);
+  letter-spacing: 1px;
+  font-weight: 600;
+} */
+
+.offerings button {
+  margin: 1rem auto;
+}
+
+.offerings .slide-item .title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--font-size-subheading);
+}
+.offerings .slide-item .summary {
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  font-size: var(--font-size-small-text);
+}

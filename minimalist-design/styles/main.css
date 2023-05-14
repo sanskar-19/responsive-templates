@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+  /* transition: background-color 150ms ease-in; */
+}
+
+.main-wrapper {
+  background-color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .header-menu-wrapper-scroll .nav-menu li a:is(:hover, .active) {
+  color: var(--button-text);
+} */
+
+.section-wrapper .content-box {
+  position: relative;
+  width: min(calc(100% - 4rem), 120rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: calc(100vh - 4rem);
+}
+.section-wrapper .content-box .content-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.section-wrapper .content-box .content-wrapper h2 {
+  font-size: var(--font-size-heading);
+  color: var(--text);
+  font-weight: 700;
+}
+.section-wrapper .content-box .content-wrapper p {
+  font-size: var(--font-size-text);
+  color: var(--text);
+}
+.section-wrapper .content-box .image-block-wrapper {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.newsletter.section-wrapper {
+  flex-grow: 0;
+}
+
+.newsletter::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0;
+  content: "";
+  background: url("/minimalist-design/assets/newsletter-bg.png") repeat center
+    center;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: overlay;
+}
+
+.newsletter.section-wrapper .content-box .content-wrapper {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  flex-grow: 0;
+  /* backdrop-filter: blur(10px); */
+}
+
+.newsletter .content-box {
+  min-height: unset;
+  padding: 4rem 0;
+}
+.newsletter .content-box .content-wrapper h2 {
+  color: var(--text);
+  text-align: center;
+  font-size: var(--font-size-subheading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--text);
+}
+
+.newsletter .content-box .content-wrapper h3 {
+  color: var(--text);
+  text-align: center;
+  margin-top: 0.25rem;
+  font-size: var(--font-size-small-text);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.newsletter .newsletter-input {
+  background-color: none;
+  color: var(--text);
+  width: min(100%, 30rem);
+  height: 3rem;
+  border-radius: 8px;
+  font-size: var(--font-size-small-text);
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.offerings .content-box {
+  min-height: unset;
+  width: 100%;
+}
+
+.offerings h2 {
+  padding: 0 2rem;
+}

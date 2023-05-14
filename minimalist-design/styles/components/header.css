@@ -1,0 +1,73 @@
+.header-menu-wrapper {
+  /* position: relative; */
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  z-index: 10;
+  color: var(--text);
+  transition: all 0.5s;
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05); */
+}
+
+.header-menu-wrapper-scroll {
+  animation: header-scroll 0.3s linear 1;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-menu-wrapper .header-menu {
+  /* position: relative; */
+  width: min(calc(100% - 4rem), 120rem);
+  margin-inline: auto;
+  padding: 1rem 0;
+  display: flex;
+  color: inherit;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 20%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: var(--font-size-subheading);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.header-menu-wrapper .header-menu .nav-menu {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: inherit;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  color: inherit;
+}
+
+.nav-menu li {
+  color: inherit;
+  font-size: var(--font-size-small-text);
+  list-style: none;
+  font-weight: 500;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+.nav-menu li a:is(:hover, .active) {
+  color: var(--accent);
+}
+.menu-icon {
+  display: none;
+}

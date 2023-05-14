@@ -1,0 +1,44 @@
+img {
+  /* height: auto; */
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  color: var(--accent);
+}
+
+.hidden {
+  display: none;
+}
+
+.button-primary:hover {
+  background-color: var(--hover-color);
+  letter-spacing: 2px;
+}
+
+.button-primary {
+  width: 9.25rem;
+  height: 3rem;
+  background-color: var(--accent);
+  font-size: var(--font-size-small-text);
+  font-weight: 500;
+  color: var(--button-text);
+  background-color: var(--accent);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  letter-spacing: 1px;
+}
+.section-wrapper {
+  width: 100%;
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
