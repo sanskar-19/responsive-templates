@@ -16,12 +16,19 @@
 .header-menu-wrapper {
   /* position: relative; */
   width: 100%;
-  height: 80px;
   position: sticky;
   top: 0;
   left: 0;
   background-color: var(--primary);
   z-index: 10;
+  color: var(--text);
+  transition: all 0.5s;
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05); */
+}
+
+.header-menu-wrapper-scroll {
+  animation: header-scroll 0.3s linear 1;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .header-menu-wrapper .header-menu {
@@ -30,16 +37,20 @@
   margin-inline: auto;
   padding: 1rem 0;
   display: flex;
+  color: inherit;
   height: max-content;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.header-menu-wrapper .header-menu .header-logo {
+.logo {
   width: 20%;
   height: 100%;
   white-space: nowrap;
+  font-size: var(--font-size-subheading);
+  font-weight: 600;
+  color: var(--text);
 }
 
 .header-menu-wrapper .header-menu .nav-menu {
@@ -48,16 +59,18 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: inherit;
 }
 
 .nav-menu ul {
   display: flex;
   align-items: center;
   column-gap: 1.25rem;
+  color: inherit;
 }
 
 .nav-menu li {
-  color: var(--text);
+  color: inherit;
   font-size: var(--font-size-small-text);
   list-style: none;
   font-weight: 500;
@@ -72,14 +85,9 @@
   color: var(--accent);
 }
 
-.nav-menu li:is(:hover, .active) {
-  color: var(--accent);
-}
-
-.header-logo {
-  font-size: var(--font-size-subheading);
-  font-weight: 500;
-}
+/* .header-menu-wrapper-scroll .nav-menu li a:is(:hover, .active) {
+  color: var(--button-text);
+} */
 
 .button-primary {
   width: 9.25rem;
@@ -126,9 +134,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  min-height: calc(100vh - 5rem);
   flex-grow: 1;
+  min-height: calc(100vh - 4rem);
 }
 .section-wrapper .content-box .content-wrapper {
   position: relative;
@@ -155,4 +162,118 @@
 img {
   height: auto;
   max-width: 100%;
+}
+
+.active {
+  color: var(--accent);
+}
+
+.newsletter.section-wrapper {
+  flex-grow: 0;
+}
+
+.newsletter::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0;
+  content: "";
+  background: url("/minimalist-design/assets/newsletter-bg.png") repeat center
+    center;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: overlay;
+}
+
+.newsletter .content-wrapper {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  /* backdrop-filter: blur(10px); */
+}
+
+.newsletter .content-box {
+  min-height: unset;
+  padding: 4rem 0;
+}
+.newsletter .content-box .content-wrapper h2 {
+  color: var(--text);
+  text-align: center;
+  font-size: var(--font-size-subheading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--text);
+}
+
+.newsletter .content-box .content-wrapper h3 {
+  color: var(--text);
+  text-align: center;
+  margin-top: 0.25rem;
+  font-size: var(--font-size-small-text);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.newsletter .newsletter-input {
+  background-color: none;
+  color: var(--text);
+  width: min(100%, 30rem);
+  height: 3rem;
+  border-radius: 8px;
+  font-size: var(--font-size-small-text);
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.footer-wrapper {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.footer-wrapper .footer-content {
+  width: min(calc(100% - 4rem), 120rem);
+  padding: 2rem 0;
+  margin-inline: auto;
+}
+
+.footer-wrapper .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0;
+  color: var(--button-text);
+  background-color: var(--accent);
+  font-size: var(--font-size-small-text);
+}
+
+.footer-content .content-box {
+  padding: 1rem 0;
+  display: flex;
+  padding-bottom: 0;
+  width: 50%;
+}
+
+.footer-content .content-box .footer-nav-menu {
+  color: var(--text);
+  font-size: var(--font-size-small-text);
+  font-weight: 500;
+  width: 50%;
+}
+
+.footer-nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  color: inherit;
+  font-size: inherit;
+}
+.footer-nav-menu ul li:hover {
+  color: var(--accent);
 }

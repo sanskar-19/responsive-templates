@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
+  /* font families */
+  --font-family-primary: "Poppins";
+
+  /* font size */
+  --font-size-small-text: 0.75rem;
+  --font-size-text: 1rem;
+  --font-size-heading: 2.5rem;
+  --font-size-subheading: 1.25rem;
+
   /* colors */
   --primary: #fff;
-  --accent: #6c34fe;
+  --accent: #7f4dfd;
   --text: #100f10;
   --button-text: #fff;
-  --hover-color: #7f4dfd;
+  --hover-color: #6c34fe;
+  --footer-grey: #fafafa;
 
   /* font families */
   --font-family-primary: "Poppins";

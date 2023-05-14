@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/config.css" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <main class="main-wrapper">
-      <section class="header-menu-wrapper">
-        <header class="header-menu">
-          <div class="header-logo">Logo</div>
+      <!-- Header -->
+      <header class="header-menu-wrapper">
+        <section class="header-menu">
+          <div class="logo">Logo</div>
           <!-- <div class="hamburger-menu-icon"> -->
           <label for="menu-icon" class="menu-icon"
             ><img src="assets/bars-solid.svg"
@@ -33,49 +36,80 @@
               </li>
             </ul>
           </nav>
-        </header>
+        </section>
+      </header>
+
+      <!-- content -->
+      <section class="section-wrapper">
+        <div class="content-box">
+          <div class="content-wrapper">
+            <h2>
+              Design, <span style="color: var(--accent)">Development,</span>
+              Deployment
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, vel. Quaerat quo necessitatibus consequuntur vel
+              consectetur veniam aut vero, reprehenderit, officiis tenetur a
+              itaque doloremque nobis eius blanditiis, maiores facere.
+            </p>
+            <button class="button-primary">Get in Touch</button>
+          </div>
+          <div class="image-block-wrapper">
+            <img src="assets/people-working-together-online.png" />
+          </div>
+        </div>
       </section>
 
-      <div class="section-wrapper">
+      <!-- Newsletter -->
+      <section class="newsletter section-wrapper">
         <div class="content-box">
+          <!-- <div class="image-block-wrapper">
+            <img src="assets/newsletter.png" />
+          </div> -->
           <div class="content-wrapper">
-            <h2>
-              Design, <span style="color: var(--accent)">Development,</span>
-              Deployment
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, vel. Quaerat quo necessitatibus consequuntur vel
-              consectetur veniam aut vero, reprehenderit, officiis tenetur a
-              itaque doloremque nobis eius blanditiis, maiores facere.
-            </p>
-            <button class="button-primary">Get in Touch</button>
-          </div>
-          <div class="image-block-wrapper">
-            <img src="assets/people-working-together-online.png" />
+            <div class="content">
+              <h2>Stay Connected with us!</h2>
+              <h3>Check-in to follow with our latest updates</h3>
+            </div>
+            <input
+              type="email"
+              placeholder="Type your email"
+              class="newsletter-input"
+            />
+            <button class="button-primary">Subscribe now</button>
           </div>
         </div>
-      </div>
-      <div class="section-wrapper">
-        <div class="content-box">
-          <div class="content-wrapper">
-            <h2>
-              Design, <span style="color: var(--accent)">Development,</span>
-              Deployment
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, vel. Quaerat quo necessitatibus consequuntur vel
-              consectetur veniam aut vero, reprehenderit, officiis tenetur a
-              itaque doloremque nobis eius blanditiis, maiores facere.
-            </p>
-            <button class="button-primary">Get in Touch</button>
-          </div>
-          <div class="image-block-wrapper">
-            <img src="assets/people-working-together-online.png" />
-          </div>
-        </div>
-      </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer-wrapper">
+        <section class="footer-content">
+          <section class="logo">Logo</section>
+          <section class="content-box">
+            <div class="footer-nav-menu">
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Hosting</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-menu">
+              <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Returns</a></li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section class="copyright" id="footer-copyright">
+          Dummy Template &copy; <span id="footer-current-year"></span>&nbsp;All
+          rights Reserved.
+        </section>
+      </footer>
     </main>
   </body>
 </html>

@@ -11,15 +11,13 @@
     justify-content: flex-start;
     background-color: var(--primary);
     width: 100%;
-    transition: all 0.7s ease-in;
+    transition: all 0.4s linear;
     z-index: 10;
     max-height: 100vh;
     overflow: hidden;
     /* row-gap: 1.25rem; */
   }
-  .header-menu-wrapper {
-    height: 48px;
-  }
+
   .header-menu-wrapper .header-menu {
     justify-content: space-between;
   }
