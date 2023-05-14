@@ -6,6 +6,7 @@
 }
 
 .slider-wrapper {
+  width: 100%;
 }
 
 .slider-track {
@@ -116,4 +117,8 @@
   padding: 1rem;
   padding-top: 0.5rem;
   font-size: var(--font-size-small-text);
+}
+
+.offerings.section-wrapper .content-wrapper {
+  width: 100%;
 }

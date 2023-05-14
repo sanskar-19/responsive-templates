@@ -24,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   min-height: calc(100vh - 4rem);
 }
 .section-wrapper .content-box .content-wrapper {
@@ -35,7 +34,6 @@
   flex-direction: column;
   row-gap: 1rem;
   justify-content: flex-start;
-  flex-grow: 1;
 }
 .section-wrapper .content-box .content-wrapper h2 {
   font-size: var(--font-size-heading);
@@ -48,7 +46,6 @@
 }
 .section-wrapper .content-box .image-block-wrapper {
   width: 50%;
-  flex-grow: 1;
 }
 
 .newsletter.section-wrapper {

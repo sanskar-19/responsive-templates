@@ -1,6 +1,6 @@
 /* Media Queries */
 
-@media screen and (width<= 768px) {
+@media screen and (width<= 820px) {
   .nav-menu ul {
     position: absolute;
     left: 0;
@@ -59,13 +59,12 @@
   .section-wrapper .content-box {
     flex-direction: column-reverse;
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
 
   .section-wrapper .content-box .content-wrapper {
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
